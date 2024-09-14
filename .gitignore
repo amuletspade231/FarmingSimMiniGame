@@ -1,0 +1,12 @@
+*.unity3d
+*.userprefs
+*.sln
+*.csproj
+*.user
+*.pid
+*.suo
+*.dll
+*.pdb
+Library
+Temp
+Build
