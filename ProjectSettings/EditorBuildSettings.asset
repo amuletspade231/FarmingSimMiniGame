@@ -8,4 +8,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameManager/GameManager.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/GameManager/Game Scenes/MainMenu/MainMenu.unity
+    guid: b92c37e5e76b7eb4982f889901dd8ef9
+  - enabled: 1
+    path: Assets/GameManager/Game Scenes/GameStart/GameStart.unity
+    guid: b1686dec923ae7a49954c9829693831b
+  - enabled: 1
+    path: Assets/GameManager/Game Scenes/Seeding/Seeding.unity
+    guid: 73a1ffd9b4dad47479497093ce9074e7
+  - enabled: 1
+    path: Assets/GameManager/Game Scenes/WateringTransition/WateringTransition.unity
+    guid: a7035d228f4f20946a48db37409658bf
+  - enabled: 1
+    path: Assets/GameManager/Game Scenes/Watering/Watering.unity
+    guid: 5c47a7887510e7f44a07196faa3e8a29
+  - enabled: 1
+    path: Assets/GameManager/Game Scenes/WeedingTransition/WeedingTransition.unity
+    guid: 6f26a61ee269483468348480c59ad267
+  - enabled: 1
+    path: Assets/GameManager/Game Scenes/Weeding/Weeding.unity
+    guid: 692840daf719e554aa91563ef294299e
+  - enabled: 1
+    path: Assets/GameManager/Game Scenes/GameEnd/GameEnd.unity
+    guid: 1220a1f17197da945b998ba2a7ace34d
   m_configObjects: {}

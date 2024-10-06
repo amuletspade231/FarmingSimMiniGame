@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
 {
     public static Timer instance { get; private set; }
 
-    public float maxTime;
+    private float maxTime;
     private float currentTime;
     public bool isTimerActive;
 
@@ -61,6 +61,17 @@ public class Timer : MonoBehaviour
         isTimerActive = true;
     }
 
+    // Get the current time
+    public float GetCurrentTime()
+    {
+        return currentTime;
+    }
+
+    public float GetMaxTime()
+    {
+        return maxTime;
+    }
+
     // Function to update the timer UI element
     private void updateTimerUI()
     {
@@ -71,6 +82,11 @@ public class Timer : MonoBehaviour
         //Debug.Log(time.ToString("ss':'ff")); formatting with miliseconds
     }
 
+    public void newStateTimer(float newTime)
+    {
+        changeMaxTime(newTime);
+        setTimerToMax();
+    }
 
     // Function to set the max time to the default set in inspector
     private void setTimerToMax() 

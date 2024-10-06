@@ -30,8 +30,24 @@ public class GameManager : MonoBehaviour
     }
 
     // Variables to track current game state and new game state
-    private GameState currentState = GameState.MAIN_MENU;
+    public GameState currentState = GameState.MAIN_MENU;
     private GameState newState;
+
+    // DEBUG: Array of names to randomly select for save/load testing
+    public string[] testNames = {
+        "Alice",
+        "Bob",
+        "Charlie",
+        "Diana",
+        "Ethan",
+        "Fiona",
+        "George",
+        "Hannah",
+        "Ian",
+        "Julia"
+    };
+
+    private string selectedName;
 
     // Variables to track name and score for save/load of high score information
     public string playerName = "Unknown";
@@ -58,6 +74,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("GameManager Start() called.");
+
         // Get the Timer component from the scene
         timer = FindObjectOfType<Timer>();
 
@@ -68,27 +86,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // TODO: Implement logic that executes during Update method
-
-    }
-
-    // ----------------------------------------------------------------------
-    //   This method is for DEBUGGING PURPOSES.
-    //   - Displays information via GUI Labels in order to maintain visual
-    //     reference to needed information that would otherwise be invisible
-    // 
-    //   This should not be implemented in the final release of the project.
-    // ----------------------------------------------------------------------
-    void OnGUI()
-    {
-        // Display current state
-        GUI.Label(new Rect(10, 10, 200, 20), $"Current State: {currentState}");
-        GUI.Label(new Rect(10, 30, 200, 20), $"Timer: {timer}");
-        // GUI.Label(new Rect(10, 30, 200, 20), $"Time in State: {timeInState:F2}s / {(currentState == StateType.TRANSITION ? transitionDuration : stateDuration)}s");
-
-        // Display high score and player name
-        GUI.Label(new Rect(10, 70, 200, 20), $"Player Name: {playerName}");
-        GUI.Label(new Rect(10, 90, 200, 20), $"High Score: {highScore}");
+        
     }
 
     // ----------------------------------------------------------------------
@@ -97,6 +95,8 @@ public class GameManager : MonoBehaviour
 
     public void ChangeState(GameState newState)
     {
+        Debug.Log($"Changing state to {newState}");
+
         // Change the game state
         currentState = newState;
         HandleStateChange(currentState);
@@ -104,6 +104,8 @@ public class GameManager : MonoBehaviour
 
     void HandleStateChange(GameState state)
     {
+        Debug.Log($"Handling state change: {state}");
+
         try
         {
             switch (state)
@@ -183,5 +185,39 @@ public class GameManager : MonoBehaviour
         {
             SaveHighScore(playerName, finalScore);
         }
+    }
+
+
+    // ----------------------------------------------------------------------
+    //   This is for DEBUGGING PURPOSES ONLY
+    //   - OnGUI information via GUI Labels in order to maintain visual
+    //     reference to needed information that would otherwise be invisible
+    //   - RandomHighScore generates a random name and score combination to
+    //     test the logic that compares scores and saves persistent data
+    // 
+    //   This should not be implemented in the final release of the project
+    // ----------------------------------------------------------------------
+    void OnGUI()
+    {
+        // Display current state
+        GUI.Label(new Rect(10, 10, 400, 20), $"Current State: {currentState}");
+        GUI.Label(new Rect(10, 50, 400, 20), $"Timer: {timer} - isActive [{Timer.instance.isTimerActive}]");
+        GUI.Label(new Rect(10, 70, 200, 20), $"Time in State: {Timer.instance.GetCurrentTime():F2}s / {Timer.instance.GetMaxTime()}s");
+
+        // Display high score and player name
+        GUI.Label(new Rect(10, 110, 200, 20), $"Player Name: {playerName}");
+        GUI.Label(new Rect(10, 130, 200, 20), $"High Score: {highScore}");
+    }
+
+    public void RandomHighScore()
+    {
+        int simulatedScore;
+
+        // Randomly select a name from the array
+        selectedName = testNames[UnityEngine.Random.Range(0, testNames.Length)];
+        simulatedScore = UnityEngine.Random.Range(0, 1000);
+        currentScore = simulatedScore;
+
+        EndGame(selectedName, simulatedScore);
     }
 }
