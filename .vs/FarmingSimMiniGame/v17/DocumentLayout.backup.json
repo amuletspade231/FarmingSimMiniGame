@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "F:\\GIT Repos\\FarmingSimMiniGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|f:\\git repos\\farmingsimminigame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|F:\\GIT Repos\\FarmingSimMiniGame\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|f:\\git repos\\farmingsimminigame\\assets\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Timer.cs",
+              "DocumentMoniker": "F:\\GIT Repos\\FarmingSimMiniGame\\Assets\\Scripts\\Timer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Timer.cs",
+              "ToolTip": "F:\\GIT Repos\\FarmingSimMiniGame\\Assets\\Scripts\\Timer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Timer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T22:46:32.282Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "F:\\GIT Repos\\FarmingSimMiniGame\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAuwEsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAIwGwAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T01:04:31.142Z",
               "EditorCaption": ""
