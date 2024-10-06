@@ -6,12 +6,28 @@ using System;
 
 public class Timer : MonoBehaviour
 {
+    public static Timer instance { get; private set; }
+
     public float maxTime;
     private float currentTime;
     public bool isTimerActive;
 
     //public TextMeshPro timerUI;
 
+
+    private void Awake()
+    {
+        // If there is an instance and it's not me, delete myself
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
