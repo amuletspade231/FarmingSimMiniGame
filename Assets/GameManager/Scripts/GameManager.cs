@@ -207,6 +207,7 @@ public class GameManager : MonoBehaviour
         // Display high score and player name
         GUI.Label(new Rect(10, 110, 200, 20), $"Player Name: {playerName}");
         GUI.Label(new Rect(10, 130, 200, 20), $"High Score: {highScore}");
+        GUI.Label(new Rect(10, 150, 200, 20), $"Score: {currentScore}");
     }
 
     public void RandomHighScore()

@@ -494,11 +494,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 231180239}
   - component: {fileID: 231180241}
   - component: {fileID: 231180240}
   m_Layer: 5
   m_Name: Text (TMP)
+=======
+  - component: {fileID: 1585519437}
+  - component: {fileID: 1585519436}
+  - component: {fileID: 1585519438}
+  m_Layer: 0
+  m_Name: SeedingLogic
+>>>>>>> main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -535,6 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -614,6 +623,16 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &231180241
 CanvasRenderer:
+=======
+  nextState: 3
+  input: 32
+  phaseOneActive: 0
+  barCurrent: 0
+  scoreTotal: 0
+  stateTimeDuration: 10
+--- !u!4 &1585519437
+Transform:
+>>>>>>> main
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -653,17 +672,22 @@ RectTransform:
   - {fileID: 1175467325}
   m_Father: {fileID: 101868316}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 281, y: -157}
   m_SizeDelta: {x: 44.878, y: 50.3903}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &505125088
+=======
+--- !u!114 &1585519438
+>>>>>>> main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 505125086}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4197,6 +4221,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129211130}
   m_CullTransparentMesh: 1
+=======
+  m_GameObject: {fileID: 1585519435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc7bb2e7e2bc904419c16a091d09879e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: 32
+  phaseOneActive: 1
+  barCurrent: 0
+  scoreTotal: 0
+>>>>>>> main
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
