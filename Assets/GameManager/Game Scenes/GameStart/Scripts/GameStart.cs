@@ -16,6 +16,7 @@ public class GameStart : MonoBehaviour
         // Set this state's maxTime and set timer to active
         Timer.instance.isTimerActive = true;
         Timer.instance.newStateTimer(stateTimeDuration);
+        AudioManager.Instance.Play("bkg_music");
     }
 
     // Update is called once per frame
