@@ -14,33 +14,39 @@ public class Watering : MonoBehaviour
     public KeyCode right = KeyCode.RightArrow;
     public bool phaseTwoActive = false;
 
-    public float barTotal = 100;
-    public float barGoal = 70;
-    [Range(0f, 100f)]
+    public float barTotal = 10;
+    [Tooltip("How much each arrow press raises the bar")]
+    public float barGainMultiplier = 11;
+
+    [Range(0f, 10f)]
     public float barCurrent = 0;
-    public float barGainMultiplier = 8;
+    [Range(0f, 10f)]
+    public float sweetSpotLowerBound = 6;
+    [Range(0f, 10f)]
+    public float sweetSpotUpperBound = 8;
+    private float sweetSpotMiddle;
+
+    [Header("Score")]
+    public int scoreTotal;
+    public int scorePenalty = 5;
     [Tooltip("How much time it takes for the score to be penalized when not in the bar sweet spot")]
     public float timeDelay = 0.5f;
     private float lastTime;
 
-    [Header("Score")]
-    public int scoreTotal = 0;
-    public int scoreMaxGain = 7;
-    public int scoreSmallGain = 3;
-    public int scorePenalty = 5;
-
     // Start is called before the first frame update
     void Start()
     {
+        // For ease of understanding, the multiplier is a small number
+        // Multiply it here for better effect
+        barGainMultiplier *= 10;
+
         // Set this state's maxTime and set timer to active
         Timer.instance.isTimerActive = true;
         Timer.instance.newStateTimer(stateTimeDuration);
 
-        // For ease of understanding, the multiplier is a small number
-        // Multiply it here for better effect
-        barGainMultiplier *= 100;
-
         scoreTotal = GameManager.instance.currentScore;
+
+        phaseTwoActive = true;
     }
 
     // Update is called once per frame
@@ -51,11 +57,14 @@ public class Watering : MonoBehaviour
         {
             PhaseTwoAction();
         }
-
+        
         // Check whether time has expired...
         if (!Timer.instance.isTimerActive)
         {
+            // Calculate the final score before switching states
             phaseTwoActive = false;
+            CalculateScore();
+            GameManager.instance.currentScore = scoreTotal;
             GameManager.instance.ChangeState(nextState);
         }
     }
@@ -83,22 +92,31 @@ public class Watering : MonoBehaviour
 
     private void CalculateScore()
     {
+        // At end phase, calculate the final score via multiplier
+        if (!phaseTwoActive)
+        {
+            // If player is in the sweet spot, double their score
+            if (barCurrent >= sweetSpotLowerBound && barCurrent <= sweetSpotUpperBound)
+            {
+                scoreTotal *= 2;
+            }
+            else // Otherwise calculate the percent increase based on how close they are to the middle of the sweet spot
+            {
+                // Find the middle of the sweet spot - find how far away the player is - convert it to a decimal and multiply score
+                sweetSpotMiddle = (sweetSpotUpperBound + sweetSpotLowerBound) / 2;
+                float temp = ((barCurrent % sweetSpotMiddle) / 10) + 1;
+                temp = scoreTotal * temp;
+                scoreTotal = (int)temp;
+            }
+            
+
+        }
         // Checks where the user is compared to the values on the bar
-        if (barCurrent >= 65 && barCurrent <= 75)
+        else if (barCurrent < sweetSpotLowerBound || barCurrent > sweetSpotUpperBound)
         {
-            // User is in sweet spot - add max score
-            scoreTotal += scoreMaxGain;
-        }
-        else if (barCurrent >= 45 && barCurrent <= 95)
-        {
-            // User is near the sweet spot - add some points
-            scoreTotal += scoreSmallGain;
-        }
-        else
-        {
-            // The user is losing points
+            // User is not in sweet spot - decrement their score
             // Check if they are at or near 0
-            if (scoreTotal <= 5)
+            if (scoreTotal <= scorePenalty)
             {
                 scoreTotal = 0;
             }

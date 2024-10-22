@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,10 +12,27 @@ public class Seeding : MonoBehaviour
     public bool phaseOneActive;
 
     private float barTotal = 10;
+    // Display bar range for designer purposes
+    [Range(0f, 10f)]
     public float barCurrent = 0;
+    [Tooltip("Changes how fast or how slow the bar moves when holding space")]
+    public float barSpeedMultiplier = 5;
+
+    [Header("Adjust Bar Values")]
+    [Range(0f, 10f)]
+    public float outsideLowerBound = 2;
+    [Range(0f, 10f)]
+    public float outsideUpperBound = 9;
+    [Range(0f, 10f)]
+    public float insideLowerBound = 4;
+    [Range(0f, 10f)]
+    public float insideUpperBound = 6;
 
     [Header("Score")]
     public int scoreTotal = 0;
+    public int outsideScoreToAdd = 3;
+    public int insideScoreToAdd = 6;
+    public int outOfBoundsScoreToAdd = 1;
 
     // Designer-specified timer length for current state
     public float stateTimeDuration;
@@ -44,7 +62,7 @@ public class Seeding : MonoBehaviour
                 if (increse)
                 {
                     // Add to the bar total based on how much time has passed, multiplied by 5
-                    barCurrent += Time.deltaTime * 5;
+                    barCurrent += Time.deltaTime * barSpeedMultiplier;
 
                     // If the bar reaches the max, start decreasing back to 0
                     if (barCurrent > barTotal)
@@ -56,7 +74,7 @@ public class Seeding : MonoBehaviour
                 // Decrease the bar from 10 to 0 based on how much time has passed
                 else if (!increse)
                 {
-                    barCurrent -= Time.deltaTime * 5;
+                    barCurrent -= Time.deltaTime * barSpeedMultiplier;
 
                     // Once the bar hits 0, start incrementing back to the max
                     if (barCurrent < 0)
@@ -86,17 +104,17 @@ public class Seeding : MonoBehaviour
     private void CalculateScore()
     {
         // Based on how close the user was to certain increments in the bar, add to their score
-        if (barCurrent >= 4.5f && barCurrent <= 5.5f)
+        if (barCurrent >= insideLowerBound && barCurrent <= insideUpperBound)
         {
-            scoreTotal += 4;
+            scoreTotal += insideScoreToAdd;
         }
-        else if (barCurrent >= 3 && barCurrent <= 7)
+        else if (barCurrent >= outsideLowerBound && barCurrent <= outsideUpperBound)
         {
-            scoreTotal += 2;
+            scoreTotal += outsideScoreToAdd;
         }
-        else if (barCurrent >= 1 && barCurrent <= 9)
+        else if (barCurrent < outsideLowerBound || barCurrent > outsideUpperBound)
         {
-            scoreTotal += 1;
+            scoreTotal += outOfBoundsScoreToAdd;
         }
 
         // Adding checking later for if the phase is over or not
@@ -109,6 +127,7 @@ public class Seeding : MonoBehaviour
         // Check whether time has expired...
         if (!Timer.instance.isTimerActive)
         {
+            GameManager.instance.currentScore = scoreTotal;
             phaseOneActive = false;
             GameManager.instance.ChangeState(nextState);
         }
