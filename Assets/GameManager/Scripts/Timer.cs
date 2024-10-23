@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
     public static Timer instance { get; private set; }
 
     private float maxTime;
-    private float currentTime;
+    public float currentTime;
     public bool isTimerActive;
 
     //public TextMeshPro timerUI;

@@ -151,7 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead4d77d54dbaa541a748de4a07f1406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 5
   isTimerActive: 0
 --- !u!4 &252563402
 Transform:
@@ -197,6 +196,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93ede3f5a7ca30e439607924efaf2563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 2
+  testNames:
+  - Alice
+  - Bob
+  - Charlie
+  - Diana
+  - Ethan
+  - Fiona
+  - George
+  - Hannah
+  - Ian
+  - Julia
   playerName: Unknown
   currentScore: 0
   highScore: 0
