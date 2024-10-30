@@ -788,7 +788,7 @@ MonoBehaviour:
   input: 32
   phaseOneActive: 0
   barCurrent: 0
-  scoreTotal: 0
+  scoreTotal: 5
 --- !u!1 &1402584314
 GameObject:
   m_ObjectHideFlags: 0
