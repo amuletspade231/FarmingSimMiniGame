@@ -2,9 +2,19 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
+using UnityEngine.UI;
+
 
 public class MainMenu : MonoBehaviour
 {
+
+    [SerializeField] public Button multiplayer;
+
+    // Referencing the multiplayer script
+    [CanBeNull]
+    public MultiplayerMenu multiplayerMenu;
+
     // Create a public variable to hold the nextState information in case it needs to be specified by a designer
     public GameManager.GameState nextState = GameManager.GameState.GAME_START;
 
@@ -19,6 +29,11 @@ public class MainMenu : MonoBehaviour
         Timer.instance.newStateTimer(5f);
 
         // TODO: Implement logic for the display of Main Menu UI
+
+
+        //Event listener for when Menu UI is done
+        multiplayer.onClick.AddListener(OpenMultiplayerMenu);
+
     }
 
     // Update is called once per frame
@@ -30,4 +45,10 @@ public class MainMenu : MonoBehaviour
             GameManager.instance.ChangeState(nextState);
         }
     }
+
+    public void OpenMultiplayerMenu() // Loading the scene can be assigned to menu UI later
+        {
+            SceneManager.LoadScene("MultiplayerMenu");   
+        }
+
 }
