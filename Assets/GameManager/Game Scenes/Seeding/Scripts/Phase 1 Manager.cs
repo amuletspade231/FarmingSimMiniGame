@@ -8,6 +8,7 @@ public class TimeManager : MonoBehaviour
 {
     public Timer timer;
     public PhaseOne p1;
+    public Seeding Seed;
     public Text timeText;
     public Text scoreText;
     public float currTime;
@@ -27,7 +28,7 @@ public class TimeManager : MonoBehaviour
         timeText.text = "Time: " + currTimeInt.ToString();
         currTime = timer.currentTime;
         currTimeInt= (int)currTime;
-        phaseOneScore = p1.scoreTotal;
+        phaseOneScore = Seed.scoreTotal;
         scoreText.text = "Score: " + phaseOneScore.ToString();
     }
 }
