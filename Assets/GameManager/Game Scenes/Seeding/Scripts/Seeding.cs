@@ -11,7 +11,7 @@ public class Seeding : MonoBehaviour
     public KeyCode input = KeyCode.Space;
     public bool phaseOneActive;
 
-    private float barTotal = 10;
+    public float barTotal = 10;
     // Display bar range for designer purposes
     [Range(0f, 10f)]
     public float barCurrent = 0;
