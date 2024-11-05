@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multiplayer: {fileID: 0}
   multiplayerMenu: {fileID: 0}
-  nextState: 0
+  nextState: 1
 --- !u!4 &224826619
 Transform:
   m_ObjectHideFlags: 0

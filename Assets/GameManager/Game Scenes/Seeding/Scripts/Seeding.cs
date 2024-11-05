@@ -90,7 +90,11 @@ public class Seeding : MonoBehaviour
                 // Add to the users score
                 phaseOneActive = false;
                 CalculateScore();
-                GameManager.instance.currentScore = scoreTotal;
+                // Null check the game manager
+                if (GameManager.instance != null)
+                {
+                    GameManager.instance.currentScore = scoreTotal;
+                }
 
                 // Reset the current bar position to 0
                 barCurrent = 0;
@@ -125,7 +129,7 @@ public class Seeding : MonoBehaviour
     void Update()
     {
         // Check whether time has expired...
-        if (!Timer.instance.isTimerActive)
+        if (!Timer.instance.isTimerActive && GameManager.instance != null)
         {
             GameManager.instance.currentScore = scoreTotal;
             phaseOneActive = false;

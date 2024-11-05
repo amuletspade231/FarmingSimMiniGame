@@ -41,10 +41,14 @@ public class Watering : MonoBehaviour
         barGainMultiplier *= 10;
 
         // Set this state's maxTime and set timer to active
-        Timer.instance.isTimerActive = true;
-        Timer.instance.newStateTimer(stateTimeDuration);
+        // Make sure there is a timer and game manager before calling it
+        if (Timer.instance != null && GameManager.instance != null)
+        {
+            Timer.instance.isTimerActive = true;
+            Timer.instance.newStateTimer(stateTimeDuration);
 
-        scoreTotal = GameManager.instance.currentScore;
+            scoreTotal = GameManager.instance.currentScore;
+        }        
 
         phaseTwoActive = true;
     }
@@ -59,7 +63,7 @@ public class Watering : MonoBehaviour
         }
         
         // Check whether time has expired...
-        if (!Timer.instance.isTimerActive)
+        if (Timer.instance != null && !Timer.instance.isTimerActive && GameManager.instance != null)
         {
             // Calculate the final score before switching states
             phaseTwoActive = false;
@@ -85,7 +89,11 @@ public class Watering : MonoBehaviour
         {
             // Calculate the score and reset the time until next calculation
             CalculateScore();
-            GameManager.instance.currentScore = scoreTotal;
+            // Null check the game manager
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.currentScore = scoreTotal;
+            }
             lastTime = Time.time;
         }
     }

@@ -32,7 +32,11 @@ public class MainMenu : MonoBehaviour
 
 
         //Event listener for when Menu UI is done
-        multiplayer.onClick.AddListener(OpenMultiplayerMenu);
+        // Null check button asset
+        if (multiplayer != null)
+        {
+            multiplayer.onClick.AddListener(OpenMultiplayerMenu);
+        }
 
     }
 

@@ -27,11 +27,15 @@ public class Weeding : MonoBehaviour
     void Start()
     {
         // Set this state's maxTime and set timer to active
-        Timer.instance.isTimerActive = true;
-        Timer.instance.newStateTimer(stateTimeDuration);
+        // Null check game manager and timer
+        if (Timer.instance != null && GameManager.instance != null)
+        {
+            Timer.instance.isTimerActive = true;
+            Timer.instance.newStateTimer(stateTimeDuration);
 
-        // Get the current user score
-        scoreTotal = GameManager.instance.currentScore;
+            // Get the current user score
+            scoreTotal = GameManager.instance.currentScore;
+        }
 
         phaseThreeActive = true;
     }
@@ -46,7 +50,7 @@ public class Weeding : MonoBehaviour
         }
 
         // Check whether time has expired...
-        if (!Timer.instance.isTimerActive)
+        if (Timer.instance != null && !Timer.instance.isTimerActive && GameManager.instance != null)
         {
             // Set the phase to inactive, calculate the final score and update it in the gameManager
             phaseThreeActive = false;
