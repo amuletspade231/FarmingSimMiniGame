@@ -9,7 +9,11 @@ public class CursorManager : MonoBehaviour
 
     void Start()
     {
-        cursorHotspot = new Vector2(cursorTexture.width / 2, cursorTexture.height / 32);
-        Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
+        // Add null checking until textures are added
+        if (cursorTexture != null)
+        {
+            cursorHotspot = new Vector2(cursorTexture.width / 2, cursorTexture.height / 32);
+            Cursor.SetCursor(cursorTexture, cursorHotspot, CursorMode.Auto);
+        }
     }
 }
