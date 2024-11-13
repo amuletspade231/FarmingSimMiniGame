@@ -8,6 +8,8 @@ public class Seeding : MonoBehaviour
     // Create a public variable to hold the nextState information in case it needs to be specified by a designer
     public GameManager.GameState nextState = GameManager.GameState.TRANSITION_TO_WATERING;
 
+    private UIManager ui;
+
     public KeyCode input = KeyCode.Space;
     public bool phaseOneActive;
 
@@ -45,6 +47,8 @@ public class Seeding : MonoBehaviour
         Timer.instance.newStateTimer(stateTimeDuration);
         phaseOneActive = true;
         StartCoroutine(PhaseOneInput());
+
+        ui = FindObjectOfType<UIManager>();
     }
 
 
@@ -120,6 +124,9 @@ public class Seeding : MonoBehaviour
         {
             scoreTotal += outOfBoundsScoreToAdd;
         }
+
+        // Update the score UI
+        ui.UpdateScoreUI(scoreTotal);
 
         // Adding checking later for if the phase is over or not
         phaseOneActive = true;
