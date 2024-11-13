@@ -7,11 +7,11 @@ public class SeedingAI : BasicAI
 {
     [Range(0f, 10f)]
     public float AIBar;
-
     private Seeding state;
     private bool isHoldingSpace = false;
     private float nextActionTime = 0f;
     private bool increase = true;
+    private AIUIManager AIS;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -19,7 +19,6 @@ public class SeedingAI : BasicAI
         state = FindObjectOfType<Seeding>();
         AIBar = 0;
         base.Start();
-
     }
 
     // Update is called once per frame
