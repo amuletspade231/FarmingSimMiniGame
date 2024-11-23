@@ -8,6 +8,7 @@ public class HandAnimation : MonoBehaviour
     private Animator anim;
     public Seeding seed;
     public KeyCode input = KeyCode.Space;
+    public AudioSource AudSource;
 
     // Start is called before the first frame update
 
@@ -30,6 +31,7 @@ public class HandAnimation : MonoBehaviour
         if (seed.barCurrent >= seed.insideLowerBound && seed.barCurrent <= seed.insideUpperBound)
         {
             anim.Play("HandPlantingMiddle");
+            AudSource.Play();
         }
         else if (seed.barCurrent >= seed.outsideLowerBound && seed.barCurrent <= seed.outsideUpperBound)
         {
