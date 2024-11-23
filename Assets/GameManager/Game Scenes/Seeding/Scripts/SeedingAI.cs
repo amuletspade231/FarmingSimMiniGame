@@ -12,6 +12,8 @@ public class SeedingAI : BasicAI
     private float nextActionTime = 0f;
     private bool increase = true;
     private AIUIManager AIS;
+    private Animator anim;
+    public GameObject HandCursor;
 
     // Start is called before the first frame update
     protected override void Start()
@@ -19,6 +21,7 @@ public class SeedingAI : BasicAI
         state = FindObjectOfType<Seeding>();
         AIBar = 0;
         base.Start();
+        anim = HandCursor.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -108,14 +111,18 @@ public class SeedingAI : BasicAI
         if (AIBar >= state.insideLowerBound && AIBar <= state.insideUpperBound)
         {
             AIScore += state.insideScoreToAdd;
+            anim.Play("HandPlantingMiddle");
+
         }
         else if (AIBar >= state.outsideLowerBound && AIBar <= state.outsideUpperBound)
         {
             AIScore += state.outsideScoreToAdd;
+            anim.Play("HandPlantingMiddleMistake");
         }
         else if (AIBar < state.outsideLowerBound || AIBar > state.outsideUpperBound)
         {
             AIScore += state.outOfBoundsScoreToAdd;
+            anim.Play("HandPlantingMiddleMistake");
         }
     }
 }

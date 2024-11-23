@@ -10,6 +10,8 @@ public class Seeding : MonoBehaviour
 
     private UIManager ui;
 
+    private HandAnimation HAnim;
+
     public KeyCode input = KeyCode.Space;
     public bool phaseOneActive;
 

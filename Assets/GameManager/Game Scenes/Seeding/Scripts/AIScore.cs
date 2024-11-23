@@ -9,7 +9,7 @@ public class AIUIManager : MonoBehaviour
     public Text AIscoreText;
     public SeedingAI AI;
     private Timer timer;
-    private Seeding seed;
+    public Seeding seed;
     public int AIScoreCurr;
 
     // Start is called before the first frame update

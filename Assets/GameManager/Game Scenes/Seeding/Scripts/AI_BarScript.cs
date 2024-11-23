@@ -6,7 +6,7 @@ public class AI_UI_Script : MonoBehaviour
 {
     public SeedingAI SAI;
     public Slider slider;
-    private Seeding Seed;
+    public Seeding Seed;
     // Start is called before the first frame update
     void Start()
     {
