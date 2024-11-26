@@ -36,10 +36,12 @@ public class HandAnimation : MonoBehaviour
         else if (seed.barCurrent >= seed.outsideLowerBound && seed.barCurrent <= seed.outsideUpperBound)
         {
             anim.Play("HandPlantingMiddleMistake");
+            AudSource.Play();
         }
         else if (seed.barCurrent < seed.outsideLowerBound || seed.barCurrent > seed.outsideUpperBound)
         {
             anim.Play("HandPlantingMiddleMistake");
+            AudSource.Play();
         }
     }
 }
