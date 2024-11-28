@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     private float maxTime;
     public float currentTime;
     public bool isTimerActive;
-
+    public AudioSource AudSource;
     //public TextMeshPro timerUI;
 
 
@@ -51,6 +51,10 @@ public class Timer : MonoBehaviour
         }
         else // Otherwise the timer should not be active
             isTimerActive = false;
+
+        if (currentTime >= 0){
+            AudSource.Play();
+        }
     }
 
 
