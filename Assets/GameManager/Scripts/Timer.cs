@@ -52,7 +52,7 @@ public class Timer : MonoBehaviour
         else // Otherwise the timer should not be active
             isTimerActive = false;
 
-        if (currentTime >= 0){
+        if (currentTime >= 1){
             AudSource.Play();
         }
     }
