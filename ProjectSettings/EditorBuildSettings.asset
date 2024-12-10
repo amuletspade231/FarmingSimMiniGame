@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameManager/Game Scenes/MultiplayerMenu/GameplayExample.unity
     guid: 3e432dab23563744682ce0e0f501ee50
+  - enabled: 1
+    path: Assets/GameManager/Game Scenes/MultiplayerMenu/MultiplayerMenu.unity
+    guid: 4e0860ed02bd0054381989cb8c2b7306
   m_configObjects: {}
