@@ -6,7 +6,7 @@ using UnityEngine;
 public class Seeding : MonoBehaviour
 {
     // Create a public variable to hold the nextState information in case it needs to be specified by a designer
-    public GameManager.GameState nextState = GameManager.GameState.TRANSITION_TO_WATERING;
+    public GameManager.GameState nextState = GameManager.GameState.GAME_END;
 
     private UIManager ui;
 
@@ -45,7 +45,7 @@ public class Seeding : MonoBehaviour
     {
         // Set this state's maxTime and set timer to active
         Timer.instance.isTimerActive = true;
-        Timer.instance.newStateTimer(stateTimeDuration);
+        Timer.instance.newStateTimer(15F);
         phaseOneActive = true;
         StartCoroutine(PhaseOneInput());
 
