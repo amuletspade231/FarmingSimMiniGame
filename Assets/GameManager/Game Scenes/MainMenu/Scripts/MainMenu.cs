@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class MainMenu : MonoBehaviour
 {
 
+
     [SerializeField] public Button multiplayer;
 
     // Referencing the multiplayer script
@@ -26,7 +27,7 @@ public class MainMenu : MonoBehaviour
 
         // Set this state's maxTime and set timer to active - this is temporary as it's the main menu
         Timer.instance.isTimerActive = true;
-        Timer.instance.newStateTimer(5f);
+        Timer.instance.newStateTimer(10000F);
 
         // TODO: Implement logic for the display of Main Menu UI
 
@@ -54,5 +55,13 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadScene("MultiplayerMenu");   
         }
+    public void PlayGame()
+    {
+        GameManager.instance.ChangeState(nextState);
+    }
 
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
 }
