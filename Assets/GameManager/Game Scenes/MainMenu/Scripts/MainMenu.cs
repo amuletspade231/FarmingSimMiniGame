@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour
 
         // Set this state's maxTime and set timer to active - this is temporary as it's the main menu
         Timer.instance.isTimerActive = true;
-        Timer.instance.newStateTimer(10000F);
+        Timer.instance.newStateTimer(99999F);
 
         // TODO: Implement logic for the display of Main Menu UI
 
@@ -42,14 +42,7 @@ public class MainMenu : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        // Check whether time has expired...
-        if (!Timer.instance.isTimerActive)
-        {
-            GameManager.instance.ChangeState(nextState);
-        }
-    }
+
 
     public void OpenMultiplayerMenu() // Loading the scene can be assigned to menu UI later
         {
