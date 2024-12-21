@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 36
+  controlID: 113
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 278
     height: 554
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -324,7 +324,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/GameManager
+    - Assets/GameManager/Scripts
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -332,16 +332,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/GameManager
+  - Assets/GameManager/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: H:\Unity stuff\TryAgain\FarmingSimMiniGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 32}
-    m_SelectedIDs: 48640000
-    m_LastClickedID: 25672
-    m_ExpandedIDs: 00000000486400004a6400004c6400009064000092640000946400009664000000ca9a3b
+    scrollPos: {x: 0, y: 96}
+    m_SelectedIDs: c0640000
+    m_LastClickedID: 25792
+    m_ExpandedIDs: 0000000050640000526400005464000056640000586400005a640000a064000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -369,7 +369,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000486400004a6400004c640000
+    m_ExpandedIDs: 0000000050640000526400005464000056640000586400005a640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -509,9 +509,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b6640000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 70adffff64afffffa6b0ffff88b7ffff00bdffff18c1ffffc4c1ffff08e0ffff24e4ffff66e6fffff2e6ffff5ee8ffffeaeafffff8ecffffd0edffff5ef9ffffa2f9ffff0cfaffff2cfbffff3a69000052690000806900004a6c0000626c0000966c0000306f0000486f0000786f0000ee6f0000f86f00001a70000096720000ae720000da7200006273000008760000207600004e760000d6760000a0780000b8780000
+      m_SelectedIDs: 18640000
+      m_LastClickedID: 25624
+      m_ExpandedIDs: 04fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1047,7 +1047,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
