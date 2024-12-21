@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameEnd : MonoBehaviour
 {
@@ -19,16 +21,9 @@ public class GameEnd : MonoBehaviour
         AudioManager.Instance.Stop("bkg_music");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        // Check whether time has expired...
-        if (!Timer.instance.isTimerActive)
+    public void ResetGame()
         {
             GameManager.instance.ChangeState(nextState);
-
-            // DEBUG: Generate random name and score for high score save/load testing
             GameManager.instance.RandomHighScore();
         }
-    }
 }
