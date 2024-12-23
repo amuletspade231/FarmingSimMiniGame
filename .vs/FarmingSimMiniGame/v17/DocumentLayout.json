@@ -1,46 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\_repos\\FarmingSimMiniGame\\",
+  "WorkspaceRootPath": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\_repos\\FarmingSimMiniGame\\assets\\gamemanager\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\scripts\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|c:\\_repos\\farmingsimminigame\\assets\\gamemanager\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|c:\\users\\cryst\\school\\farmingsimgroupgame_3\\farmingsimminigame\\assets\\gamemanager\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\_repos\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\gameend\\scripts\\gameend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\gameend\\scripts\\gameend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\scripts\\networking\\clientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\scripts\\networking\\clientmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\_repos\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\mainmenu\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\mainmenu\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\scripts\\networking\\hostmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\scripts\\networking\\hostmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\_repos\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\gamestart\\scripts\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\gamestart\\scripts\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\scripts\\networking\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\scripts\\networking\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\_repos\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\seeding\\scripts\\seeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\multiplayermenu\\scripts\\multiplayermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\multiplayermenu\\scripts\\multiplayermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\seeding\\scripts\\seeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\seeding\\scripts\\seeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\_repos\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\wateringtransition\\scripts\\wateringtransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\wateringtransition\\scripts\\wateringtransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\gameend\\scripts\\gameend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\gameend\\scripts\\gameend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\_repos\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\weeding\\scripts\\weeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\weeding\\scripts\\weeding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\scripts\\networking\\cursorinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\scripts\\networking\\cursorinputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\_repos\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\watering\\scripts\\watering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\watering\\scripts\\watering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\mainmenu\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\mainmenu\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\_repos\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\weedingtransition\\scripts\\weedingtransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\weedingtransition\\scripts\\weedingtransition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\seeding\\scripts\\cursormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\seeding\\scripts\\cursormanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\assets\\gamemanager\\game scenes\\gamestart\\scripts\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1FA784A-60FB-23D6-C0C7-63A5892F9C75}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager\\game scenes\\gamestart\\scripts\\gamestart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,53 +54,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerData.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Networking\\PlayerData.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager\\Scripts\\Networking\\PlayerData.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Networking\\PlayerData.cs",
+              "RelativeToolTip": "Assets\\GameManager\\Scripts\\Networking\\PlayerData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T05:27:43.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameEnd.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\GameEnd\\Scripts\\GameEnd.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\GameEnd\\Scripts\\GameEnd.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\GameEnd\\Scripts\\GameEnd.cs",
+              "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\GameEnd\\Scripts\\GameEnd.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T01:57:46.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MultiplayerMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\MultiplayerMenu\\Scripts\\MultiplayerMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\MultiplayerMenu\\Scripts\\MultiplayerMenu.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\MultiplayerMenu\\Scripts\\MultiplayerMenu.cs",
+              "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\MultiplayerMenu\\Scripts\\MultiplayerMenu.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCQAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T20:41:48.284Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ClientManager.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Networking\\ClientManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager\\Scripts\\Networking\\ClientManager.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Networking\\ClientManager.cs",
+              "RelativeToolTip": "Assets\\GameManager\\Scripts\\Networking\\ClientManager.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAuwDsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:57:34.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HostManager.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Networking\\HostManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager\\Scripts\\Networking\\HostManager.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Networking\\HostManager.cs",
+              "RelativeToolTip": "Assets\\GameManager\\Scripts\\Networking\\HostManager.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwNgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T18:57:29.579Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\GameManager\\Scripts\\GameManager.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\GameManager\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAgwNAAAABKAAAAAAAAAA==",
+              "ViewState": "AQIAABgBAAAAAAAAAAAqwCcBAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T03:32:52.468Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Timer.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Timer.cs",
-              "RelativeDocumentMoniker": "Assets\\GameManager\\Scripts\\Timer.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Timer.cs",
-              "RelativeToolTip": "Assets\\GameManager\\Scripts\\Timer.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAIwEgAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "CursorInputManager.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Networking\\CursorInputManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager\\Scripts\\Networking\\CursorInputManager.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Scripts\\Networking\\CursorInputManager.cs",
+              "RelativeToolTip": "Assets\\GameManager\\Scripts\\Networking\\CursorInputManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T03:40:16.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T18:57:36.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
+              "Title": "CursorManager.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\CursorManager.cs",
+              "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\CursorManager.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\CursorManager.cs",
+              "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\CursorManager.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T21:53:32.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\MainMenu\\Scripts\\MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\MainMenu\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\MainMenu\\Scripts\\MainMenu.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\MainMenu\\Scripts\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\MainMenu\\Scripts\\MainMenu.cs",
               "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\MainMenu\\Scripts\\MainMenu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABlAAAAAAAAAA==",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwDYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T03:38:52.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "GameStart.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\GameStart\\Scripts\\GameStart.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\GameStart\\Scripts\\GameStart.cs",
               "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\GameStart\\Scripts\\GameStart.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\GameStart\\Scripts\\GameStart.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\GameStart\\Scripts\\GameStart.cs",
               "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\GameStart\\Scripts\\GameStart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -106,73 +185,13 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Seeding.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\Seeding.cs",
+              "DocumentMoniker": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\Seeding.cs",
               "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\Seeding.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\Seeding.cs",
+              "ToolTip": "C:\\Users\\Cryst\\School\\FarmingSimGroupGame_3\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\Seeding.cs",
               "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\Seeding\\Scripts\\Seeding.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAgwCcAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-06T04:29:50.157Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WateringTransition.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\WateringTransition\\Scripts\\WateringTransition.cs",
-              "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\WateringTransition\\Scripts\\WateringTransition.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\WateringTransition\\Scripts\\WateringTransition.cs",
-              "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\WateringTransition\\Scripts\\WateringTransition.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T04:31:46.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Watering.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Watering\\Scripts\\Watering.cs",
-              "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\Watering\\Scripts\\Watering.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Watering\\Scripts\\Watering.cs",
-              "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\Watering\\Scripts\\Watering.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T04:40:31.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "WeedingTransition.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\WeedingTransition\\Scripts\\WeedingTransition.cs",
-              "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\WeedingTransition\\Scripts\\WeedingTransition.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\WeedingTransition\\Scripts\\WeedingTransition.cs",
-              "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\WeedingTransition\\Scripts\\WeedingTransition.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T04:41:48.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Weeding.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Weeding\\Scripts\\Weeding.cs",
-              "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\Weeding\\Scripts\\Weeding.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\Weeding\\Scripts\\Weeding.cs",
-              "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\Weeding\\Scripts\\Weeding.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T04:42:55.827Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameEnd.cs",
-              "DocumentMoniker": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\GameEnd\\Scripts\\GameEnd.cs",
-              "RelativeDocumentMoniker": "Assets\\GameManager\\Game Scenes\\GameEnd\\Scripts\\GameEnd.cs",
-              "ToolTip": "C:\\_repos\\FarmingSimMiniGame\\Assets\\GameManager\\Game Scenes\\GameEnd\\Scripts\\GameEnd.cs",
-              "RelativeToolTip": "Assets\\GameManager\\Game Scenes\\GameEnd\\Scripts\\GameEnd.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-06T04:43:55.194Z"
             }
           ]
         }

@@ -1,3 +1,4 @@
+// Game Manager
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,6 +8,9 @@ using System;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
+using UnityEditor;
+using Unity.Netcode;
 
 public class GameManager : MonoBehaviour
 {
@@ -54,6 +58,12 @@ public class GameManager : MonoBehaviour
     public int currentScore = 0;
     public int highScore = 0;
 
+    // Multiplayer Variables
+    public NetworkVariable<GameState> currentNetworkState = new NetworkVariable<GameState>(GameState.MAIN_MENU);
+    [Serialize] public bool isMultiplayer = false;
+    public int maxPlayers = 4;
+    public Dictionary<ulong, PlayerData> Players = new Dictionary<ulong, PlayerData>();
+
     private void Awake()
     {
         // If there is an instance and it's not me, delete myself
@@ -77,7 +87,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("GameManager Start() called.");
 
         // Get the Timer component from the scene
-        timer = FindObjectOfType<Timer>();
+         timer = FindObjectOfType<Timer>(); 
 
         // Start with the MAIN_MENU state
         ChangeState(GameState.MAIN_MENU);
@@ -86,7 +96,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     // ----------------------------------------------------------------------
@@ -99,6 +109,30 @@ public class GameManager : MonoBehaviour
 
         // Change the game state
         currentState = newState;
+        // Check if the game is multiplayer
+        if (isMultiplayer)
+        {
+            // Only the host should trigger the scene change
+            if (NetworkManager.Singleton.LocalClientId == 0) // Check if it's the host
+            {
+                Debug.Log("This is the host, triggering scene change.");
+
+                // Sync game state across the network (host sets the network state)
+                if (NetworkManager.Singleton.IsHost)
+                {
+                    currentNetworkState.Value = newState;  // Sync the new state to all clients
+                    Debug.Log($"Host called server for scene change, setting network state to: {newState}");
+                }
+            }
+            else
+            {
+                Debug.Log("This is not the host, waiting for host to change the scene.");
+                // Clients will wait for the host to change the scene.
+                return;
+            }
+        }
+
+        // Regardless of whether it's multiplayer or not, handle the state change
         HandleStateChange(currentState);
     }
 
@@ -149,7 +183,19 @@ public class GameManager : MonoBehaviour
     void LoadScene(string sceneName)
     {
         // Handle the scene loading based on state
-        SceneManager.LoadScene(sceneName);
+        if (isMultiplayer == true)
+        {
+            Debug.Log("Multiplayer is true, loading network scene change..");
+            if (NetworkManager.Singleton.IsHost)
+            {
+                Debug.Log($"Host told server to change scenes. Scene is changing to: {sceneName} scene");
+                NetworkManager.Singleton.SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+            }
+        }
+        else
+        {
+            SceneManager.LoadScene(sceneName);
+        }                                                   
     }
 
     // ----------------------------------------------------------------------
@@ -221,4 +267,33 @@ public class GameManager : MonoBehaviour
 
         EndGame(selectedName, simulatedScore);
     }
+    public bool AddPlayer(ulong clientId, string playerNumber)
+    {
+        if (Players.Count >= maxPlayers || Players.ContainsKey(clientId))
+        {
+            return false;
+        }
+
+        Players[clientId] = new PlayerData { ClientId = clientId, PlayerName = playerNumber};
+        Debug.Log($"Player: " + playerNumber + " - Added. Player count = " + Players.Count);
+        return true;
+    }
+
+    public void RemovePlayer(ulong clientId, string playerNumber)
+    {
+        if (Players.ContainsKey(clientId))
+        {
+            Players.Remove(clientId);
+            Debug.Log($"Player: " + playerNumber + " - Removed. Player count = " + Players.Count);
+        }
+    }
+
+    // Gathers all player data for each player
+    // And returns a list of the player's data values that can be iterated through or checked with ".ContainsKey" for values
+    public List<PlayerData> GetAllPlayerData()
+    {
+        return new List<PlayerData>(Players.Values);
+    }
+
 }
+
